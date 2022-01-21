@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    var hydroponics = [
+
+        {
+            image: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/170/original/data?1599847734",
+            name: "Baby Spinach (Hydroponics)",
+            quantity: "100 g",
+            price: "60"
+        },
+
+        {
+            image: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/631/original/data?1635766646",
+            name: "Mixed lettuce (Hydroponics)",
+            quantity: "1 Punnet (Approx 100g)",
+            price: "60"
+        },
+
+        {
+            image: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/169/original/data?1599847670",
+            name: "Celery (Hydroponics)",
+            quantity: "150-200g",
+            price: "67"
+        },
+
+        {
+            image: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/003/103/original/data?1639301565",
+            name: "Kale Curly (Aquaponics)",
+            quantity: "Approx 200g",
+            price: "129"
+        },
+    ]
+
+
+    hydroponics.map(function (data) {
+
+        maindiv = document.createElement("div");
+
+        var img = document.createElement("img");
+        img.setAttribute("src", data.image);
+
+
+        maindiv.append(img);
+        document.querySelector("body").append(maindiv)
+    })
+
+</script>

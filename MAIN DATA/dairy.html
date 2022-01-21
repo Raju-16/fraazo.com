@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    var dairy = [
+
+        {
+            image: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/367/original/data?1622452513",
+            name: "ISKCON's A2 Bilona Ghee",
+            quantity: "500 ml",
+            price: "1250"
+        },
+
+        {
+            image: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/394/original/data?1625864720",
+            name: "ISKCON's A2 Cream Ghee",
+            quantity: "225 ml",
+            price: "375"
+        },
+    ]
+
+
+    dairy.map(function (data) {
+
+        maindiv = document.createElement("div");
+
+        var img = document.createElement("img");
+        img.setAttribute("src", data.image);
+
+
+        maindiv.append(img);
+        document.querySelector("body").append(maindiv)
+    })
+
+</script>

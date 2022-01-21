@@ -1,0 +1,502 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  margin: auto;
+}
+
+
+/*-------------- NAV BAR CSS------------ */
+
+#main {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  position: fixed;
+  border-bottom: 1px solid rgb(226, 220, 220);
+  margin-top: -150px;
+}
+
+#left {
+  width: 20%;
+  padding: 15px;
+}
+
+img {
+  width: 180px;
+  height: 55px;
+}
+
+#mid {
+  width: 40%;
+  height: 25px;
+  margin-top: 25px;
+}
+#mid > input {
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  color: rgb(121, 115, 115);
+  background: rgb(231, 237, 238);
+  border: 1px solid gray;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+#right {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 18px;
+  color: rgb(116, 113, 113);
+}
+
+#cart,
+#login,#signup {
+  cursor: pointer;
+}
+
+/* --------SLIDING PART CSS----------- */
+
+#container {
+  display: flex;
+  width: 89%;
+  height: 320px;
+  padding: 20px 60px;
+  margin-top: 150px;
+  /* border: 1px solid red; */
+  /* background-color: rgb(228, 129, 206); */
+}
+
+#leftimg {
+  width: 65%;
+  /* border: 1px solid red; */
+  margin-right: 50px;
+  /* margin-top: 11px; */
+}
+
+/* .slide-image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+} */
+
+.slide-image > div > img {
+  width: 100%;
+  height: 110%;
+}
+
+#rightimg {
+  width: 32%;
+  /* border: 1px solid white; */
+}
+
+#rightimg > div > img {
+  width: 90%;
+  height: 90px;
+  padding: 10px 20px;
+  margin-bottom: -10px;
+  /* margin-top: -15px; */
+}
+
+#rightimg > div:nth-child(1) {
+  /* width: 90%;
+  height: 96px;
+  padding: 10px 20px;
+  margin-bottom: -10px; */
+  margin-top: -15px;
+}
+
+/* --------CSS FOR THE BEST DEALS---------- */
+
+#bestdeals {
+  width: 96%;
+  height: 340px;
+  padding: 20px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+/* --------CSS FOR THE ZONE---------- */
+
+#zone {
+  width: 90%;
+  height: 525px;
+  /* border: 3px solid red; */
+  padding: 30px 50px;
+  /* background-color: purple; */
+}
+
+#zoneline1 >a> img,
+#zoneline2 >a> img {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  margin: auto;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+#zoneline1 >a> img:hover,
+#zoneline2 >a> img:hover {
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#zoneline1 {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-gap: 25px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#zoneline2 {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-gap: 25px;
+  justify-content: center;
+}
+
+/* --------CSS FOR THE VEG---------- */
+
+.mhead {
+  display: flex;
+  /* border-bottom-width: 1100; */
+}
+
+.head {
+  margin-left: 40px;
+  font-weight: 200;
+  color: rgb(128, 121, 121);
+  margin-bottom: 10px;
+}
+.mhead > p {
+  margin: 35px 0px 0px 5px;
+  color: red;
+}
+#veg {
+  width: 96%;
+  height: 340px;
+  /* border: 3px solid white; */
+  /* background-color: rgb(75, 56, 243); */
+  padding: 20px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.mainitem {
+  width: 230px;
+  height: 320px;
+  background-color: white;
+  border-radius: 8px;
+  margin-right: 20px;
+  border: 1px solid whitesmoke;
+}
+.mainitem:hover {
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.mainitem > .up {
+  width: 100%;
+  height: 65%;
+  background-color: rgb(245, 238, 238);
+  border-radius: 8px;
+}
+.down {
+  padding: 0px 10px;
+  padding-right: 20px;
+  background-color: rgb(255, 249, 249);
+}
+.mainitem img {
+  width: 230px;
+  height: 100%;
+}
+.inner {
+  display: flex;
+  justify-content: space-between;
+}
+.inner > div > p {
+  margin: 0px;
+}
+.inner > button {
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0px;
+  color: whitesmoke;
+  background-color: rgb(9, 93, 72);
+}
+button:hover{
+
+  cursor: pointer;
+  background-color: rgb(108, 218, 5);
+}
+
+/* --------CSS FOR THE FRUIT--------- */
+
+#fruit {
+  width: 96%;
+  height: 340px;
+  padding: 20px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /* border: 3px solid white; */
+  /* background-color: rgb(214, 39, 156); */
+}
+
+/* --------CSS FOR THE HERB--------- */
+
+#herb {
+  width: 96%;
+  height: 340px;
+  padding: 20px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+/* --------CSS FOR THE DRY FRUIT--------- */
+
+#dryfruit {
+  width: 96%;
+  height: 340px;
+  padding: 20px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+/* --------CSS FOR THE DRY HYDRO--------- */
+
+#hydro {
+  width: 96%;
+  height: 340px;
+  padding: 20px;
+  display: flex;
+  /* overflow-x: scroll; */
+  /* overflow-y: hidden; */
+}
+
+/* --------CSS FOR THE DAIRY--------- */
+
+#dairy {
+  width: 96%;
+  height: 340px;
+  padding: 20px;
+  display: flex;
+}
+
+/* CSS FOR DETAILS IN MOBILE AND ON ONLINE PLATEFORM */
+
+#detail {
+  width: 100%;
+  height: 600px;
+  /* border: 1px solid purple; */
+  /* background-color: orangered; */
+  display: flex;
+}
+
+#Ldetail {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzI0IiBoZWlnaHQ9Ijc4NCIgdmlld0JveD0iMCAwIDcyNCA3ODQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIG9wYWNpdHk9IjAuMTUiIGQ9Ik0xMTEuNzY4IDEyMi42Qy0xMS43NDk0IDExMy4wMzQgLTguOTc1MzQgNDIuMDkwMiAtNTIuMTA4MyAwTC0zNTYgMjIzLjg0M0MtMjkyLjYwOCA0MTUuMTYzIC0xMjguMzEgODg2LjMzOSAtODQuMzkyOSA3NjMuODk1QzIxLjIzMjEgNDI2LjI3MiAxODQuMDkgNTU3LjAwNiA0MTUuNDQgNjQ4LjgzOUM2NDYuNzg5IDc0MC42NzIgODUzLjAyOSA1ODIuODI0IDYyNC44MDQgMzAzLjY3MkMzOTYuNTc4IC05Mi40MjE5IDIzNS4yODUgMTMyLjE2NiAxMTEuNzY4IDEyMi42WiIgZmlsbD0iIzVEQzZBRCIvPgo8cGF0aCBvcGFjaXR5PSIwLjE1IiBkPSJNMjU2LjAzMiA2ODIuMTc3QzI1MS45OTkgNzExLjcxOCAyMjYuMTQ5IDcwMC44IDE4OC4zNTEgNjk1LjYzOUMxNTAuNTUyIDY5MC40NzkgMTE1LjExNyA2OTMuMDMgMTE5LjE1IDY2My40ODlDMTIzLjE4NCA2MzMuOTQ4IDE1Ny4wOTUgNjE0LjE4MyAxOTQuODk0IDYxOS4zNDRDMjMyLjY5MyA2MjQuNTA1IDI2MC4wNjUgNjUyLjYzNiAyNTYuMDMyIDY4Mi4xNzdaIiBmaWxsPSIjNURDNkFEIi8+CjxwYXRoIG9wYWNpdHk9IjAuMTUiIGQ9Ik02NjIuNzc5IDE1MS45NjFDNjUwLjUxOSAxNjQuMjIxIDYzOC43NTcgMTQzLjQ3MyA2MDEuNDc5IDEzNC45ODZDNTYyLjgxMyAxMzQuOTg2IDU1NC42ODMgMTA5LjA4MSA1NzEuMzAxIDg5LjE5MTJDNTg3LjkxOCA2OS4zMDEzIDYxMi43ODcgNjcuNDkzMSA2MzguNzU3IDg5LjE5MDNDNjY0LjcyOCAxMTAuODg4IDY3Mi4yMSAxMzQuOTg2IDY2Mi43NzkgMTUxLjk2MVoiIGZpbGw9IiM1REM2QUQiLz4KPC9zdmc+Cg==");
+  background-size: 700px 600px;
+  width: 60%;
+  height: auto;
+  background-color: #fff;
+}
+
+#Ldetail > img {
+  /* background-repeat: no-repeat; */
+
+  width: 500px;
+  height: 500px;
+  margin-left: 60px;
+  margin-top: 60px;
+}
+#Rdetail {
+  width: 400px;
+  /* border: 1px solid yellow;    */
+  padding: 40px 100px 40px 60px;
+  background-color: #fff;
+}
+#Rdetail > h1 {
+  font-size: 40px;
+  font-weight: 200;
+}
+#Rdetail > h1 + p {
+  display: inline-block;
+  font-size: 19px;
+  margin-top: 0px;
+  width: 330px;
+  height: auto;
+}
+#btn {
+  display: flex;
+  width: 300px;
+  background: white;
+  border: 1px solid gray;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+#btn > #ad {
+  display: flex;
+  width: 150px;
+  color: white;
+  background: black;
+  border: 1px solid gray;
+  text-align: center;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+#btn > #ip {
+  display: flex;
+}
+#btn > #ad > img {
+  width: 20px;
+  height: 20px;
+  margin: 15px 10px 0px 30px;
+}
+#btn > #ip > img {
+  width: 28px;
+  height: 28px;
+  margin-top: 8px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+#number {
+  width: 375px;
+  height: 65px;
+  border-radius: 5px;
+  border: 0.2px solid grey;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+#Mbtn {
+  width: 383px;
+  height: 65px;
+  border-radius: 5px;
+  border: 0px;
+  font-size: 18px;
+  color: white;
+  background: rgb(174, 227, 214);
+}
+#item3 {
+  display: flex;
+  margin: 30px 0px 0px -30px;
+  color: rgb(119, 115, 115);
+  font-size: 20px;
+}
+#item3 > img {
+  width: 150px;
+}
+
+/* CSS FOR THE LAST CONTENT AND DETAILS */
+
+#imgline > img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 0px;
+}
+
+#last {
+  width: 87%;
+  height: auto;
+  background-color: rgb(13, 82, 65);
+  margin-top: -39px;
+  padding: 30px 80px;
+}
+
+#mainbox {
+  display: flex;
+  justify-content: center;
+}
+
+#box1 > img {
+  margin-top: 15px;
+}
+
+#box1 {
+  width: 22%;
+  color: rgb(189, 175, 175);
+  font-size: 18px;
+  text-align: justify;
+  margin-right: 80px;
+}
+
+#box2 {
+  width: 22%;
+  color: rgb(189, 175, 175);
+  font-size: 18px;
+  text-align: justify;
+  /* margin-right: 40px; */
+}
+
+#box3 {
+  width: 22%;
+  color: rgb(189, 175, 175);
+  font-size: 18px;
+  text-align: justify;
+  /* margin-right: 40px; */
+}
+
+#box4 {
+  width: 22%;
+  color: rgb(189, 175, 175);
+  font-size: 18px;
+  text-align: justify;
+  /* margin-right: 40px; */
+}
+
+#mainbox > div > h3 {
+  color: white;
+}
+
+#payimg {
+  display: flex;
+}
+
+#payimg > img {
+  width: 120px;
+  height: 40px;
+}
+
+#payimg > img:nth-child(2) {
+  width: 150px;
+  height: 60px;
+  margin-top: -7px;
+}
+
+#last > h1 {
+  color: white;
+  font-weight: 200;
+  font-size: 40px;
+}
+
+#dtext {
+  color: rgb(185, 179, 179);
+  text-align: justify;
+  word-spacing: 2px;
+  font-size: 17px;
+}
+
+hr + p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(185, 179, 179);
+}

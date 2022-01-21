@@ -1,0 +1,103 @@
+#contentlogin {
+    width: 85%;
+    height: 520px;
+    margin: auto;
+    display: flex;
+    /* border: 1px solid rgb(206, 198, 198); */
+    margin-top: 150px;
+}
+
+#contentlogin>#leftlogin {
+    width: 40%;
+    height: 520px;
+    /* border: 1px solid rgb(206, 198, 198); */
+    background-color: rgb(250, 243, 178);
+}
+
+#leftlogin>img {
+    margin: auto;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+#contentlogin>#rightlogin {
+    width: 60%;
+    height: 520px;
+    /* border: 1px solid purple; */
+}
+
+#rightlogin>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+#logline1,
+#logline2,
+#logline3 {
+    margin-left: 40px;
+}
+
+#logline1>h2 {
+    margin-bottom: -18px;
+    color: rgb(110, 104, 104);
+}
+
+label {
+    font-size: 17px;
+}
+
+#logline2>input,
+#logline3>input {
+    width: 200px;
+    height: 20px;
+    padding: 5px 10px;
+    border: 1px solid rgb(165, 157, 157);
+    border-radius: 6px;
+}
+
+#mob {
+    width: 200px;
+    height: 20px;
+    padding: 20px, 20px;
+}
+
+#logline3>a {
+    margin-left: 100px;
+}
+
+#check {
+    margin: 10px 5px 15px 40px;
+}
+
+#loginbtn {
+    margin-left: 120px;
+    padding: 10px 50px;
+    background-color: rgb(54, 236, 21);
+    color: white;
+    border: 0px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#loginbtn+p {
+    text-align: center;
+    margin-bottom: -5px;
+    font-size: 18px;
+    color: rgb(105, 78, 78);
+}
+
+#button {
+    margin-left: 100px;
+
+}
+
+#button>button {
+    padding: 10px 20px;
+    background-color: rgb(95, 97, 221);
+    color: white;
+    border: 0px;
+    border-radius: 6px;
+    margin-right: 20px;
+}
